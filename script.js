@@ -43,6 +43,12 @@ function singleRound(playerSelection = "",computerChoice){
     }
 
 }
-let choice = prompt("enter your choice");
 
-singleRound(choice,computerPlay);
+function game() {
+    for (let index = 0; index < 5; index++) {
+        let choice = prompt("enter your choice");
+        singleRound(choice,computerPlay);
+    }
+}
+game();
+
